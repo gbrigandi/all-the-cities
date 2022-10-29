@@ -1,4 +1,4 @@
-# all-the-cities
+# all-the-cities with browser compatibility
 
 All the 138,398 cities of the world with a population of at least 1000 inhabitants, in a big JSON array that is ready to be imported in MongoDB for `geoSpatialSearch`.
 

@@ -37,6 +37,7 @@
     "through2": "^2.0.5"
   },
   "dependencies": {
+    "browserify-fs": "^1.0.0",
     "pbf": "^3.2.1"
   }
 }

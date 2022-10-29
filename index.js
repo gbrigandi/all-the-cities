@@ -2,8 +2,10 @@ const Pbf = require('pbf')
 const fs = require('fs')
 const path = require('path')
 
-var pbf = new Pbf(fs.readFileSync(path.join(__dirname, 'cities.pbf')))
+var cities_base64 = require('./cities_base64.js')
 var cities = []
+
+var pbf = new Pbf(Buffer.from(cities_base64, 'base64'))
 
 var lastLat = 0
 var lastLon = 0
@@ -43,3 +45,5 @@ function readCity(tag, city, pbf) {
         city.loc.coordinates[1] = lastLat / 1e5
     }
 }
+
+
